@@ -250,6 +250,11 @@ predicted = clf.predict(x_test)
 #print(predicted)
 
 print ("Greedy sort parwise preferences")
+'''
+The binary classification on the pairwise test data gives a prediction from each pair of test items:
+which of the two should be ranked higher. From these pairwise preferences a ranking can be created
+using a standard greedy sort algorithm.
+'''
 pairwise_preferences = dict()
 set_of_items_in_testset_per_group_id = dict()
 k=0
