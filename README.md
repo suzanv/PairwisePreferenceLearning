@@ -1,4 +1,4 @@
-# machinelearning
+# Pairwise preference ranking
 
 ```
 python pairwise.py trainfile.tsv testfile.tsv
@@ -16,3 +16,13 @@ The script requires 2 tab-separated files in which:
 the train-test split should be on the group level: all items belonging to one group should be in the same partition.
 
 Two example files are provided.
+
+## Steps in the algorithm
+
+1. Get data from feature files
+2. Do the pairwise transform for the training set
+3. Do the pairwise transform for the test set
+4. Train classifier on pairwise data
+5. Make predictions on testset
+6. Greedy sort parwise preferences
+7. Evaluate: create table for Precision-Recall graph
