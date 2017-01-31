@@ -45,7 +45,7 @@ def get_vectors_per_groupid (filename):
 
 
 '''
-Note that we need 2 separate function for pairwise transformation: one for the trainset that takes the labels into account
+Note that we need 2 separate functions for pairwise transform: one for the trainset that takes the labels into account
 (only creating pairs of one positive and one negative example), and one for the testset that does not take the
 labels into account (creates pairs of all items)
 '''

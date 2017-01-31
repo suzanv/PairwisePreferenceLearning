@@ -6,7 +6,7 @@ python pairwise.py trainfile.tsv testfile.tsv
 
 Performs pairwise preference ranking for a given trainfile and testfile with binary class labels (1 and not 1).
 
-Other implementations use the same pairwise transformation function for the test set and the train set. Note however that we need 2 separate function for pairwise transformation: one for the trainset that takes the labels into account (only creating pairs of one positive and one negative example), and one for the testset that does not take the labels into account (creates pairs of all items). 
+Other implementations use the same pairwise transformation function for the test set and the train set. Note however that we need 2 separate functions for the pairwise transform: one for the trainset that takes the labels into account (only creating pairs of one positive and one negative example), and one for the testset that does not take the labels into account (creates pairs of all items). 
 
 The binary classification on the pairwise test data gives a prediction from each pair of test items: which of the two should be ranked higher. From these pairwise preferences a ranking can be created using a greedy sort algorithm.
 
